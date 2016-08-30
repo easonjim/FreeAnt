@@ -1,0 +1,396 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Chinese (中国) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_SIMPLIFIED
+#pragma code_page(936)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)\r\n"
+    "#ifdef _WIN32\r\n"
+    "LANGUAGE 4, 2\r\n"
+    "#pragma code_page(936)\r\n"
+    "#endif //_WIN32\r\n"
+    "#include ""res\\FreeAnt.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""l.chs\\afxres.rc""          // Standard components\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON    DISCARDABLE     "res\\FreeAnt.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// 24
+//
+
+1                       24      MOVEABLE PURE   "res\\Master.manifest"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_FREEANT_DIALOG DIALOGEX 0, 0, 212, 220
+STYLE DS_MODALFRAME | WS_MINIMIZEBOX | WS_POPUP | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_APPWINDOW
+CAPTION "FreeAnt (Ver0.3)"
+FONT 9, "宋体"
+BEGIN
+    CONTROL         "",IDC_RICHEDIT_SEND,"RICHEDIT",ES_MULTILINE | 
+                    ES_AUTOVSCROLL | WS_BORDER | WS_VSCROLL | WS_TABSTOP,12,
+                    127,189,57
+    CONTROL         "List1",IDC_LIST_USERINFO,"SysListView32",LVS_REPORT | 
+                    WS_BORDER | WS_TABSTOP,11,12,133,79
+    DEFPUSHBUTTON   "发送(&S)",IDC_BUTTON_SEND,143,195,58,16
+    GROUPBOX        "在线人数信息：",IDC_STATIC,7,2,142,93
+    GROUPBOX        "",IDC_STATIC,7,97,198,92
+    PUSHBUTTON      "新消息(&M)",IDC_BUTTON_MSGPROMPT,11,195,58,16,NOT 
+                    WS_VISIBLE
+    PUSHBUTTON      "文件",IDC_BUTTON_SENDFILE,10,106,193,17
+    PUSHBUTTON      "刷新(&R)",IDC_BUTTON_REFRESH,159,55,42,23
+    GROUPBOX        "",IDC_STATIC,153,2,52,93
+    LTEXT           "在线人数:",IDC_STATIC,161,18,37,8
+    LTEXT           "    人",IDC_STATIC_PEOPLESIZE,171,35,25,8
+    PUSHBUTTON      "退出(&E)",IDC_BUTTON_EXIT,83,195,58,16
+    PUSHBUTTON      "*",IDC_BUTTON_MAINMENU,183,81,16,10
+    GROUPBOX        "",IDC_STATIC,7,188,198,27
+END
+
+IDD_CHAT_DIALOG DIALOG DISCARDABLE  0, 0, 192, 185
+STYLE DS_MODALFRAME | WS_MINIMIZEBOX | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "ChatBox"
+FONT 9, "宋体"
+BEGIN
+    CONTROL         "",IDC_RICHEDIT_SEND,"RICHEDIT",ES_AUTOHSCROLL | 
+                    WS_BORDER | WS_TABSTOP,15,124,162,17
+    DEFPUSHBUTTON   "发送(&S)",IDC_BUTTON_SEND,30,152,53,17
+    PUSHBUTTON      "退出(&Q)",IDC_BUTTON_QUIT,108,152,53,17
+    GROUPBOX        "聊天",IDC_STATIC,7,36,178,142,BS_CENTER
+    CONTROL         "",IDC_RICHEDIT_RECV,"RICHEDIT",ES_MULTILINE | 
+                    ES_AUTOVSCROLL | ES_READONLY | WS_BORDER | WS_VSCROLL | 
+                    WS_TABSTOP,15,50,162,61
+    GROUPBOX        "对方信息",IDC_STATIC,7,3,178,30,BS_CENTER
+    EDITTEXT        IDC_EDIT_USERINFO,23,16,146,12,ES_CENTER | 
+                    ES_AUTOHSCROLL | ES_READONLY | WS_DISABLED | NOT 
+                    WS_BORDER
+END
+
+IDD_SENDFILE_DIALOG DIALOG DISCARDABLE  0, 0, 300, 103
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "传送文件列表"
+FONT 9, "宋体"
+BEGIN
+    CONTROL         "List1",IDC_LIST_FILE,"SysListView32",LVS_REPORT | 
+                    WS_BORDER | WS_TABSTOP,7,7,286,58
+    GROUPBOX        "",IDC_STATIC,7,65,286,32
+    DEFPUSHBUTTON   "添加(&A)",IDC_BUTTON_ADD,17,75,50,18
+    PUSHBUTTON      "删除(&D)",IDC_BUTTON_DELETE,79,75,50,18
+    PUSHBUTTON      "关闭(&C)",IDC_BUTTON_CLOSE,235,75,50,18
+END
+
+IDD_RECVFILE_DIALOG DIALOG DISCARDABLE  0, 0, 160, 194
+STYLE DS_MODALFRAME | WS_MINIMIZEBOX | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "接收文件列表"
+FONT 9, "宋体"
+BEGIN
+    CONTROL         "List1",IDC_LIST_FILE,"SysListView32",LVS_REPORT | 
+                    WS_BORDER | WS_TABSTOP,7,7,146,76
+    PUSHBUTTON      "接收(&R)",IDC_BUTTON_RECEIVER,13,162,40,15
+    PUSHBUTTON      "另存为(&S)",IDC_BUTTON_SAVEAS,60,162,40,15
+    PUSHBUTTON      "取消(&C)",IDC_BUTTON_CANCEL,107,162,40,15
+    GROUPBOX        "",IDC_STATIC,7,148,146,39
+    GROUPBOX        "文件传输进度",IDC_STATIC,7,87,146,61,BS_CENTER
+    CONTROL         "Progress1",IDC_PROGRESS1,"msctls_progress32",WS_BORDER,
+                    12,104,136,12
+    CONTROL         "Progress1",IDC_PROGRESS2,"msctls_progress32",WS_BORDER,
+                    12,128,136,12
+    PUSHBUTTON      "打开文件目录",IDC_BUTTON_OPENFILEDIR,7,86,146,101,NOT 
+                    WS_VISIBLE
+END
+
+IDD_SETUP_DIALOG DIALOG DISCARDABLE  0, 0, 302, 184
+STYLE DS_MODALFRAME | WS_MINIMIZEBOX | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "软件设置"
+FONT 9, "宋体"
+BEGIN
+    GROUPBOX        "",IDC_STATIC1,93,2,202,175
+    GROUPBOX        "",IDC_STATIC,7,103,79,74
+    PUSHBUTTON      "确定(&E)",IDC_BUTTON_ENTER,17,113,59,16
+    PUSHBUTTON      "应用(&A)",IDC_BUTTON_APPLICATION,17,134,59,16
+    PUSHBUTTON      "取消(&C)",IDC_BUTTON_CANCEL,17,155,59,16
+    LISTBOX         IDC_LIST_OPTIONS,7,6,79,96,LBS_NOINTEGRALHEIGHT | 
+                    WS_VSCROLL | WS_TABSTOP
+END
+
+IDD_ABOUT_DIALOG DIALOG DISCARDABLE  0, 0, 166, 98
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "关于 Free Ant"
+FONT 9, "宋体"
+BEGIN
+    ICON            IDR_MAINFRAME,IDC_STATIC,27,18,21,21
+    LTEXT           "Free Ant for Windows",IDC_STATIC,62,15,81,8
+    LTEXT           "Version 0.3",IDC_STATIC,79,27,45,8
+    LTEXT           "Copyright(c) 2011 Eason",IDC_STATIC,42,48,93,8
+    PUSHBUTTON      "确定(&E)",IDC_BUTTON_ENTER,58,73,50,14
+END
+
+IDD_SETUP1_DIALOG DIALOG DISCARDABLE  0, 0, 196, 168
+STYLE WS_CHILD
+FONT 9, "宋体"
+BEGIN
+    GROUPBOX        "界面初始化设置",IDC_STATIC,3,0,190,35
+    CONTROL         "启动软件显示主界面(此项不勾选将启动到托盘)",
+                    IDC_CHECK_INITSHOWDLG,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,8,15,179,10
+    GROUPBOX        "提示设置",IDC_STATIC,3,76,190,85
+    GROUPBOX        "接收文件默认保存途径",IDC_STATIC,4,38,188,35
+    EDITTEXT        IDC_EDIT_RECVFILEPATH,12,51,135,13,ES_AUTOHSCROLL
+    PUSHBUTTON      "更改",IDC_BUTTON1,156,51,28,14
+    CONTROL         "气球提示",IDC_CHECK_BALLOONPROMPT,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,35,91,48,10
+    CONTROL         "提示音",IDC_CHECK_MUTE,"Button",BS_AUTOCHECKBOX | 
+                    WS_GROUP | WS_TABSTOP,119,91,40,10
+    EDITTEXT        IDC_EDIT_MSGTONEPATH,33,114,114,13,ES_AUTOHSCROLL | 
+                    WS_DISABLED
+    EDITTEXT        IDC_EDIT_FILETONEPATH,33,137,114,13,ES_AUTOHSCROLL | 
+                    WS_DISABLED
+    PUSHBUTTON      "更改",IDC_BUTTON2,156,113,28,14,WS_DISABLED
+    PUSHBUTTON      "更改",IDC_BUTTON3,156,137,28,14,WS_DISABLED
+    LTEXT           "信息:",IDC_STATIC,9,116,21,8
+    LTEXT           "文件:",IDC_STATIC,9,140,21,8
+END
+
+IDD_SETUP2_DIALOG DIALOG DISCARDABLE  0, 0, 189, 166
+STYLE WS_CHILD
+FONT 9, "宋体"
+BEGIN
+    LTEXT           "未开发",IDC_STATIC,82,78,25,8
+END
+
+
+#ifndef _MAC
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 0,3,0,0
+ PRODUCTVERSION 0,3,0,0
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "080404b0"
+        BEGIN
+            VALUE "Comments", "\0"
+            VALUE "CompanyName", "Eason\0"
+            VALUE "FileDescription", "FreeAnt\0"
+            VALUE "FileVersion", "v0.3\0"
+            VALUE "InternalName", "FreeAnt by Eason\0"
+            VALUE "LegalCopyright", "版权所有(C) 2011\0"
+            VALUE "LegalTrademarks", "\0"
+            VALUE "OriginalFilename", "FreeAnt.exe\0"
+            VALUE "PrivateBuild", "\0"
+            VALUE "ProductName", "FreeAnt\0"
+            VALUE "ProductVersion", "v0.3\0"
+            VALUE "SpecialBuild", "\0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x804, 1200
+    END
+END
+
+#endif    // !_MAC
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    IDD_FREEANT_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 205
+        TOPMARGIN, 7
+    END
+
+    IDD_CHAT_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 185
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 178
+    END
+
+    IDD_SENDFILE_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 293
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 96
+    END
+
+    IDD_RECVFILE_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 153
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 187
+    END
+
+    IDD_SETUP_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 295
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 177
+    END
+
+    IDD_SETUP2_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 182
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 159
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_USERINFOLIST_MENU MENU DISCARDABLE 
+BEGIN
+    POPUP "用户信息列表右键菜单"
+    BEGIN
+        MENUITEM "全选(&A)",                    IDR_USERINFOLIST_MENUITEM_SELECTALL
+
+        MENUITEM "反选(&I)",                    IDR_USERINFOLIST_MENUITEM_INVERSE
+
+        MENUITEM SEPARATOR
+        MENUITEM "发送文件(&F)",                IDR_USERINFOLIST_MENUITEM_SENDFILE
+
+        MENUITEM "发送文件夹(&D)",              IDR_USERINFOLIST_MENUITEM_SENDFOLDER
+
+    END
+END
+
+IDR_MAIN_MENU MENU DISCARDABLE 
+BEGIN
+    POPUP "主右键菜单"
+    BEGIN
+        MENUITEM "发送文件(&F)",                IDR_MAIN_MENUITEM_SENDFILE
+        MENUITEM "发送文件夹(&D)",              IDR_MAIN_MENUITEM_SENDFOLDER
+        MENUITEM SEPARATOR
+        MENUITEM "搜索联系人(&S)",              IDR_MAIN_MENUITEM32784
+    END
+END
+
+IDR_TASKBAR_MENU MENU DISCARDABLE 
+BEGIN
+    POPUP "任务栏右键菜单"
+    BEGIN
+        MENUITEM "Free Ant",                    ID_MENUITEM32793
+        MENUITEM SEPARATOR
+        MENUITEM "设置",                        IDR_TASKBAR_MENUITEM_SETUP
+        MENUITEM SEPARATOR
+        MENUITEM "关于",                        IDR_TASKBAR_MENUITEM_ABOUT
+        MENUITEM "退出",                        IDR_TASKBAR_MENUITEM_EXIT
+    END
+END
+
+#endif    // Chinese (中国) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE 4, 2
+#pragma code_page(936)
+#endif //_WIN32
+#include "res\FreeAnt.rc2"  // non-Microsoft Visual C++ edited resources
+#include "l.chs\afxres.rc"          // Standard components
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

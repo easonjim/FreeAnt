@@ -1,0 +1,82 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: FreeAnt - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating command line "rc.exe /l 0x804 /fo"Debug/FreeAnt.res" /d "_DEBUG" "D:\My_Document\Desktop\C++\FreeAnt\FreeAnt.rc"" 
+Creating temporary file "C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP216.tmp" with contents
+[
+/nologo /MTd /W3 /Gm /GX /ZI /Od /D "WIN32" /D "_DEBUG" /D "_WINDOWS" /D "_MBCS" /FR"Debug/" /Fo"Debug/" /Fd"Debug/" /FD /GZ /c 
+"D:\My_Document\Desktop\C++\FreeAnt\ChatDlg.cpp"
+"D:\My_Document\Desktop\C++\FreeAnt\FreeAnt.cpp"
+"D:\My_Document\Desktop\C++\FreeAnt\FreeAntDlg.cpp"
+"D:\My_Document\Desktop\C++\FreeAnt\RecvFileDlg.cpp"
+"D:\My_Document\Desktop\C++\FreeAnt\SendFileDlg.cpp"
+"D:\My_Document\Desktop\C++\FreeAnt\Setup1Dlg.cpp"
+"D:\My_Document\Desktop\C++\FreeAnt\SetupDlg.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP216.tmp" 
+Creating temporary file "C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP217.tmp" with contents
+[
+/nologo /subsystem:windows /incremental:yes /pdb:"Debug/FreeAnt.pdb" /debug /machine:I386 /out:"Debug/FreeAnt.exe" /pdbtype:sept 
+".\Debug\AboutDlg.obj"
+".\Debug\ChatDlg.obj"
+".\Debug\File64.obj"
+".\Debug\FileTransfer.obj"
+".\Debug\FreeAnt.obj"
+".\Debug\FreeAntDlg.obj"
+".\Debug\GroupTalk.obj"
+".\Debug\InitSocket.obj"
+".\Debug\RecvFileDlg.obj"
+".\Debug\SendFileDlg.obj"
+".\Debug\Setup1Dlg.obj"
+".\Debug\Setup2Dlg.obj"
+".\Debug\SetupDlg.obj"
+".\Debug\StdAfx.obj"
+".\Debug\FreeAnt.res"
+]
+Creating command line "link.exe @C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP217.tmp"
+<h3>Output Window</h3>
+Compiling resources...
+Compiling...
+FreeAnt.cpp
+FreeAntDlg.cpp
+Setup1Dlg.cpp
+SetupDlg.cpp
+Generating Code...
+Skipping... (no relevant changes detected)
+ChatDlg.cpp
+RecvFileDlg.cpp
+SendFileDlg.cpp
+Linking...
+Creating temporary file "C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP218.tmp" with contents
+[
+/nologo /o"Debug/FreeAnt.bsc" 
+".\Debug\StdAfx.sbr"
+".\Debug\AboutDlg.sbr"
+".\Debug\ChatDlg.sbr"
+".\Debug\File64.sbr"
+".\Debug\FileTransfer.sbr"
+".\Debug\FreeAnt.sbr"
+".\Debug\FreeAntDlg.sbr"
+".\Debug\GroupTalk.sbr"
+".\Debug\InitSocket.sbr"
+".\Debug\RecvFileDlg.sbr"
+".\Debug\SendFileDlg.sbr"
+".\Debug\Setup1Dlg.sbr"
+".\Debug\Setup2Dlg.sbr"
+".\Debug\SetupDlg.sbr"]
+Creating command line "bscmake.exe @C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP218.tmp"
+Creating browse info file...
+<h3>Output Window</h3>
+
+
+
+<h3>Results</h3>
+FreeAnt.exe - 0 error(s), 0 warning(s)
+</pre>
+</body>
+</html>

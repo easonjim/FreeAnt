@@ -1,0 +1,45 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: FreeAnt - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating command line "rc.exe /l 0x804 /fo"Debug/FreeAnt.res" /d "_DEBUG" "D:\C++\FreeAnt\FreeAnt v0.1\FreeAnt.rc"" 
+Creating temporary file "C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP813.tmp" with contents
+[
+/nologo /MTd /W3 /Gm /GX /ZI /Od /D "WIN32" /D "_DEBUG" /D "_WINDOWS" /D "_MBCS" /FR"Debug/" /Fo"Debug/" /Fd"Debug/" /FD /GZ /c 
+"D:\C++\FreeAnt\FreeAnt v0.1\FreeAnt.cpp"
+"D:\C++\FreeAnt\FreeAnt v0.1\FreeAntDlg.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP813.tmp" 
+Creating temporary file "C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP814.tmp" with contents
+[
+/nologo /subsystem:windows /incremental:yes /pdb:"Debug/FreeAnt.pdb" /debug /machine:I386 /out:"Debug/FreeAnt.exe" /pdbtype:sept 
+".\Debug\FreeAnt.obj"
+".\Debug\FreeAntDlg.obj"
+".\Debug\GroupTalk.obj"
+".\Debug\InitSocket.obj"
+".\Debug\StdAfx.obj"
+".\Debug\FreeAnt.res"
+]
+Creating command line "link.exe @C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP814.tmp"
+<h3>Output Window</h3>
+Compiling resources...
+Compiling...
+FreeAnt.cpp
+FreeAntDlg.cpp
+Generating Code...
+Linking...
+Creating command line "bscmake.exe /nologo /o"Debug/FreeAnt.bsc"  ".\Debug\StdAfx.sbr" ".\Debug\FreeAnt.sbr" ".\Debug\FreeAntDlg.sbr" ".\Debug\GroupTalk.sbr" ".\Debug\InitSocket.sbr""
+Creating browse info file...
+<h3>Output Window</h3>
+
+
+
+<h3>Results</h3>
+FreeAnt.exe - 0 error(s), 0 warning(s)
+</pre>
+</body>
+</html>
